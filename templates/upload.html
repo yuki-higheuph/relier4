@@ -1,0 +1,8 @@
+{% extends "index.html" %}
+{% block content %}
+<h2>EmotiGauge</h2>
+    <form method="post" action="{{ url_for('upload_file') }}" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">アップロード</button>
+    </form>
+{% endblock %}
